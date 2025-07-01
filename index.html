@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Spotify Vietnamese</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Thanh tiến trình ở top -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="https://storage.googleapis.com/a1aa/image/52d36576-bb0a-4ef2-1b44-3fc3127ba537.jpg" alt="Spotify Logo">
+      <span class="logo-text">Spotify</span>
+    </div>
+    <div class="header-controls">
+      <button aria-label="Thông báo"><i class="far fa-bell"></i></button>
+      <button aria-label="Tài khoản"><i class="fas fa-user-circle"></i></button>
+    </div>
+  </header>
+  
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Welcome message -->
+    <div class="welcome">
+      <h1>Chào buổi tối</h1>
+    </div>
+    
+    <!-- Recently played -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Nghe gần đây</h2>
+        <button class="view-all">XEM TẤT CẢ</button>
+      </div>
+      <div class="recent-container" id="recent-tracks">
+        <!-- Generated dynamically -->
+      </div>
+    </section>
+    
+    <!-- Popular songs -->
+    <section class="section">
+      <h2 class="section-title">Những bài hát thịnh hành</h2>
+      <div class="cards-container" id="popular-tracks">
+        <!-- Generated dynamically -->
+      </div>
+    </section>
+    
+    <!-- Popular artists -->
+    <section class="section">
+      <h2 class="section-title">Nghệ sĩ phổ biến</h2>
+      <div class="cards-container" id="popular-artists">
+        <!-- Generated dynamically -->
+      </div>
+    </section>
+    
+    <!-- Popular albums -->
+    <section class="section">
+      <h2 class="section-title">Album và đĩa đơn nổi tiếng</h2>
+      <div class="cards-container" id="popular-albums">
+        <!-- Generated dynamically -->
+      </div>
+    </section>
+  </main>
+  
+  <!-- Player bar -->
+  <div class="player-bar" id="player-bar">
+    <!-- Generated dynamically -->
+  </div>
+  
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <button class="nav-button active">
+      <i class="fas fa-home"></i>
+      <span>Trang chủ</span>
+    </button>
+    <button class="nav-button">
+      <i class="fas fa-search"></i>
+      <span>Tìm kiếm</span>
+    </button>
+    <button class="nav-button" id="library-button">
+      <i class="fas fa-book"></i>
+      <span>Thư viện</span>
+    </button>
+    <button class="nav-button">
+      <i class="fas fa-music"></i>
+      <span>Nhạc của bạn</span>
+    </button>
+  </nav>
+  
+  <!-- Music list modal -->
+  <div class="music-list-modal" id="music-list-modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Danh sách nhạc</h3>
+      <button class="close-button" id="close-modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="music-list" id="music-list">
+      <!-- Generated dynamically -->
+    </div>
+  </div>
+  
+  <!-- Load JavaScript files -->
+  <script src="assets/js/tracks.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
